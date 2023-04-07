@@ -24,7 +24,7 @@ import {createApi ,fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 
         }),
         endpoints:(builders)=>({
-            getTopCharts:builders.query({query:()=> '/charts/track'}),
+            getTopCharts:builders.query({query:()=> 'charts/track?locale=en-US&pageSize=50&startFrom=0'}),
         }),
 
     });
